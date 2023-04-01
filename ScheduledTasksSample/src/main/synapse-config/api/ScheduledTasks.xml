@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/tasks" name="ScheduledTasks" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <log>
+                <property name="message" value="This is the API"/>
+            </log>
+            <sequence key="ScheduledTaskSample"/>
+            <log>
+                <property expression="json-eval($.doctors)" name="data"/>
+            </log>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

@@ -1,0 +1,11 @@
+---
+key: "ScheduledTasks-1.0.0"
+name : "ScheduledTasks"
+displayName : "ScheduledTasks"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/tasks"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

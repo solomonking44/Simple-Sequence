@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="ScheduledTaskSample" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log>
+        <property name="message" value="&quot;Welcome to my Sequence&quot;"/>
+    </log>
+    <call>
+        <endpoint key="GrandOakEP"/>
+    </call>
+</sequence>
